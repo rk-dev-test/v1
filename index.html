@@ -1,0 +1,421 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>Boot Template</title>
+<style>
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+ src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+ src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+       url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+       url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+       url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+       url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+body {
+font-size: 15px;
+line-height: 1.8;
+background-color: #fff;
+font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+color: #616161;
+}
+a {
+text-decoration: none;
+    cursor: pointer;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.logo img {
+max-width: 175px;
+}
+.fa-search:before {
+content: "\f002";
+}
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.fa-search:before {
+    content: "\f002";
+}
+.fa-clock-o:before {
+    content: "\f017";
+}
+.post_content p span {
+    display: block;
+}
+.fa-facebook-square:before {
+    content: "\f082";
+}
+.fa-instagram:before {
+    content: "\f16d";
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.footer-logo img {
+    max-width: 170px;
+}
+.footer_inner .link a:hover {
+    opacity: 0.6;
+}
+.img-v {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+     transition: 0.9s;
+}
+.img-v:hover {
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 green;
+}
+.img-v img {
+    transition: 0.9s;
+}
+.img-v:hover img {
+	filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.img-v>h1.py-2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: green;
+    font-size: 14px;
+text-shadow: 1px 1px white;
+}
+
+</style>
+</head>
+<body>
+<!---------------------header--------------------------->
+<div class="header border-bottom border-light">
+   <div class="container">
+      <div class="header_inner d-lg-flex py-4">
+         <div class="logo col-lg-3 col-12">
+            <img src="img/colorlib-logo-top.webp">
+         </div>
+         <nav class="navbar navbar-expand-lg navbar-light bg-white col-lg-9 col-12 justify-content-end">
+            <div class="container-fluid justify-content-end">
+               <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                     <a class="nav-link active" aria-current="page" href="https://colorlib.com/wp/">Home</a>
+                     <a class="nav-link" href="https://colorlibsupport.com/">Support</a>
+                     <a class="nav-link" href="https://colorlib.com/wp/themes/">Free Themes</a>
+                     <a class="nav-link" href="https://colorlib.com/wp/category/collections/">Premium Themes</a>
+                     <a class="nav-link" href="https://colorlib.com/wp/templates/">Website Templates</a>
+                     <a class="nav-link" href="https://colorlib.com/wp/">Blog</a>
+                     <a class="nav-link" href="https://colorlib.com/checkout/my-account/">Account</a>
+                     <a class="nav-link" href="#"><span><i class="fa fa-search fa-6" aria-hidden="true"></i></span></a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </div>
+</div>
+
+<!-------------banner----------------------->
+<div class="banner bg-primary">
+   <div class="container">
+      <div class="banner_inner d-flex py-3 justify-content-between">
+         <div class="banner_title">
+            <h1 class="fs-3 text-white">Blog</h1>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<!------------------------image-slider--------------------->
+
+<div class="image_slider">
+   <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="img/first.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="img/coronavirus.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="img/finish.jpg" class="d-block w-100" alt="...">
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+   </div>
+</div>
+
+
+<!--------------------------body-container------------------------->
+<div class="body-container py-5">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-9 col-md-9 col-12 d-ms-flex d-md-flex">
+            <div class="col col-sm-12 col-md-6 p-2">
+              <div class="img-v">
+
+            		<img src="img/coronavirus.jpg" class="img-fluid">
+ <h1 class="py-2">
+                     How to Make a WordPress Website – Step-by-Step Guide for Beginners
+                  </h1>
+            	</div>
+               <div class="post_content">
+                  <h1 class="py-2">
+                     How to Make a WordPress Website – Step-by-Step Guide for Beginners
+                  </h1>
+                  <p>
+                    <!-- <span>
+                     <i class="fa fa-clock-o fa-6" aria-hidden="true"></i>
+                     April 14, 2021
+                     </span>-->
+                     Trying to figure out how to create a website? Today you will find out! An easy step-by-step website setup guide written by web developers who have created hundreds of websites and helped thousands of others to create their own website
+                  </p>
+               </div>
+            </div>
+            <div class="col col-sm-12 col-md-6 p-2">
+            	<div class="img-v">
+            		<img src="img/pizza.jpg" class="img-fluid">
+            		 <h1 class="py-2">
+                    17 Delicious Pizza House WordPress Themes 2021
+                  </h1>
+            	</div>
+               
+               <div class="post_content">
+                  <h1 class="py-2">
+                    17 Delicious Pizza House WordPress Themes 2021
+                  </h1>
+                  <p>
+                     <!--<span>
+                     <i class="fa fa-clock-o fa-6" aria-hidden="true"></i>
+                     April 14, 2021
+                     </span>-->
+                     A comprehensive list of the best and highest rated pizza WordPress themes for pizza houses and food delivery. Do you run a pizza house? Have you ever caught yourself thinking “Man, I wish I had more customers”? Starting up a…
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-3 col-12">
+            <nav class="navbar navbar-light pb-5">
+               <div class="container px-0">
+                  <form class="d-flex">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+               </div>
+            </nav>
+            <div class="follow-us pb-5">
+               <h2>
+                  Follow Us
+               </h2>
+               <div class="share fs-2 d-flex justify-content-between">
+                  <a href="https://www.facebook.com/colorlib">
+                  <i class="fa fa-facebook-square fa-6" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                  <i class="fa fa-twitter fa-6" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                  <i class="fa fa-linkedin fa-6" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                  <i class="fa fa-instagram fa-6" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="accordion accordion-flush pb-5" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Section #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the lass. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Section #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+       Section #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!---------------footer------------------------------>
+<div class="footer_top bg-dark">
+   <div class="container">
+      <div class="footer_inner d-lg-flex py-5">
+         <div class="col-12 col-lg-4 footer-logo ">
+            <img src="img/colorlib-logo-white.png.webp">
+            <p>We change everything WordPress.</p>
+            <p>One WP theme at a time.</p>
+            <p class="fs-2 justify-content-around d-flex ">
+               <a class="text-white" href="https://www.facebook.com/colorlib">
+               <i class="fa fa-facebook-square fa-6" aria-hidden="true"></i>
+               </a>
+               <a class="text-danger" href="#">
+               <i class="fa fa-twitter fa-6" aria-hidden="true"></i>
+               </a>
+               <a href="#" class="text-success">
+               <i class="fa fa-linkedin fa-6" aria-hidden="true"></i>
+               </a>
+               <a href="#" class="text-warning">
+               <i class="fa fa-instagram fa-6" aria-hidden="true"></i>
+               </a>
+            </p>
+         </div>
+         <div class="col-12 col-lg-4 px-1 link pb-5">
+            <h3>
+               Useful
+            </h3>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            About Colorlib
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Advertise
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            WordPress Themes
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            WordPress Themes
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Bootstrap Templates
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Support Forum
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            – Support Policy
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Contact us
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Affiliate disclosure
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Affiliate disclosure
+            </a>
+         </div>
+         <div class="col-12 col-lg-4 px-1 link">
+            <h3>
+               Free Themes
+            </h3>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            About Colorlib
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Advertise
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            WordPress Themes
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            WordPress Themes
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Bootstrap Templates
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Support Forum
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            – Support Policy
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Contact us
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Affiliate disclosure
+            </a>
+            <a class="d-block border-bottom border-light text-light py-2" heft="#">
+            Affiliate disclosure
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer_coptright bg-dark p-3 text-white border-top border-white">
+   <div class="container">
+      <div calss="footer_coptright">
+         Copyright 2013-2021 colorlib.com | operated by Divilab LLC&nbsp;<a class="text-white" title="Privacy Policy" href="https://colorlib.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>&nbsp;| <a class="text-white" title="Terms and Conditions" href="https://colorlib.com/wp/terms-conditions/" target="_blank" rel="noopener">Site Terms</a> &amp; <a href="https://colorlib.com/wp/colorlib-disclaimer/" target="_blank" rel="noopener" class="text-white">Disclosures</a>. <span>Hosted by <a class="text-white" href="https://colorlib.com/wp/kinsta-review/">Kinsta</a></span>
+      </div>
+   </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
+
+
+
